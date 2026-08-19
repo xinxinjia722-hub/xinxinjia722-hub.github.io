@@ -1955,7 +1955,7 @@ button.profile-contact-item:hover { border-color: var(--cyan); background: rgba(
   .intro-cursor { height: 14px; }
   .intro-prompt button { padding: 12px 10px; font-size: 10px; }
   .intro-pixel-loader { width: 100%; flex-basis: auto; }
-  .site-header { position: relative; grid-template-columns: 1fr; }
+  .site-header { position: sticky; top: 0; z-index: 60; grid-template-columns: 1fr; margin-top: 0; }
   .brand { min-height: 50px; border-right: 0; border-bottom: 1px solid var(--line); text-align: center; }
   .site-header nav button { min-width: 86px; min-height: 55px; }
   .hero { width: calc(100% - 24px); gap: 38px; padding: 84px 5px 70px; }
