@@ -120,7 +120,7 @@ export const diaries = [
       '该项目获得：',
     ],
     achievement: '🏆 中国国际大学生创新大赛国家级银奖',
-    media: [{ type: 'video', src: '/media/diary/log-03-ai-culture.m4v', alt: 'AI文化创新项目视频' }],
+    media: [{ type: 'video', src: '/media/diary/log-03-ai-culture-web.mp4', alt: 'AI文化创新项目视频' }],
     skills: ['AIGC创作', '文化创新', '项目策划', 'AI工具应用'],
   },
   {

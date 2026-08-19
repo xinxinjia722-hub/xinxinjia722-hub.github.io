@@ -183,7 +183,7 @@ function DiaryVideo({ item, title, onError }) {
   return (
     <figure className="diary-video">
       <header><Film size={14} /><span>VIDEO CACHE // {title}</span><em>{playing ? 'PLAYING' : 'READY'}</em></header>
-      <div><video ref={videoRef} controls playsInline preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)} onError={onError}><source src={item.src} type={mimeType} /></video>{!playing && <button onClick={play} aria-label={`播放${title}`}><Play size={24} fill="currentColor" /></button>}</div>
+      <div><video ref={videoRef} controls playsInline preload="none" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)} onError={onError}><source src={item.src} type={mimeType} /></video>{!playing && <button onClick={play} aria-label={`播放${title}`}><Play size={24} fill="currentColor" /></button>}</div>
       <figcaption>{item.alt}</figcaption>
     </figure>
   )
