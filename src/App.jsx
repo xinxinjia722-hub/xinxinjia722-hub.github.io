@@ -101,7 +101,7 @@ export default function App() {
       <Starfield />
       <SparkleTrail />
       {introVisible && <IntroScreen exiting={introExiting} onEnter={enterIntro} />}
-      <audio ref={audioRef} src="/media/audio/xin-space.flac" preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onError={() => setMusicError('当前浏览器无法读取 FLAC')} />
+      <audio ref={audioRef} src="/media/audio/xin-space.mp3" preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onError={() => setMusicError('当前浏览器无法读取 MP3')} />
       <header className="site-header">
         <button className="brand" onClick={() => navigate('home')}>★ XIN'S SPACE ★</button>
         <nav aria-label="空间导航">{navItems.map((item) => <button className={route === item.id || (item.action === 'game' && gameOpen) ? 'active' : ''} key={item.id} onClick={() => item.action === 'game' ? setGameOpen(true) : navigate(item.id)}><span>{item.label}</span><i>{item.emoji}</i></button>)}</nav>

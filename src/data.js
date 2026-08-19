@@ -120,7 +120,7 @@ export const diaries = [
       '该项目获得：',
     ],
     achievement: '🏆 中国国际大学生创新大赛国家级银奖',
-    media: [{ type: 'video', src: '/media/diary/log-03-ai-culture-web.mp4', alt: 'AI文化创新项目视频' }],
+    media: [{ type: 'video', src: '/media/diary/log-03-ai-culture-mobile.mp4', alt: 'AI文化创新项目视频' }],
     skills: ['AIGC创作', '文化创新', '项目策划', 'AI工具应用'],
   },
   {
@@ -164,7 +164,7 @@ export const diaries = [
       '这次创作让我进一步认识到：',
       '技术可以创造新的表达方式，但真正打动人的，永远是故事背后的情感。',
     ],
-    media: [{ type: 'video', src: '/media/diary/log-05-quit-loop.mp4', alt: 'AIGC创意短片《戒不掉》' }],
+    media: [{ type: 'video', src: '/media/diary/log-05-quit-loop-mobile.mp4', alt: 'AIGC创意短片《戒不掉》' }],
     skills: ['AIGC视频创作', '短视频策划', '剧情内容设计', '团队协作', 'AI视觉表达'],
   },
   {
