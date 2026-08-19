@@ -2069,3 +2069,37 @@ button.profile-contact-item:hover { border-color: var(--cyan); background: rgba(
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 1ms !important; animation-iteration-count: 1 !important; }
   .cursor-spark { display: none; }
 }
+@media (max-width: 720px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    margin-top: 0;
+  }
+
+  .site-header nav {
+    position: relative;
+    padding-right: 78px;
+    background: linear-gradient(
+      90deg,
+      transparent 0 78%,
+      rgba(10, 11, 19, 0.94) 92%
+    );
+  }
+
+  .site-header nav::after {
+    content: '↔ 左右滑动';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border: 1px solid rgba(98, 220, 255, 0.28);
+    padding: 5px 6px;
+    color: #62dcff;
+    background: rgba(10, 11, 19, 0.9);
+    font: 700 8px/1 Consolas, monospace;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+}
